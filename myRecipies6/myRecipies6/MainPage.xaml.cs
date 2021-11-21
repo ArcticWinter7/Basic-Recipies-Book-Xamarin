@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using myRecipies6;
-using Todo.Views;
+using myRecipies6.Views;
 
 namespace myRecipies6
 {
@@ -16,7 +16,6 @@ namespace myRecipies6
         {
             //just have to make this page redirect to the todopage then test that then redo the code to fit assignment
             InitializeComponent();
-            App.Current.MainPage = new NavigationPage(new Todo.Views.TodoListPage());
 
         }
         

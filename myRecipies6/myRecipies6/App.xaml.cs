@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using myRecipies6.Views;
 
 namespace myRecipies6
 {
@@ -10,7 +11,11 @@ namespace myRecipies6
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new TodoListPage())
+            {
+                BarTextColor = Color.White,
+                //BarBackgroundColor = (Color)App.Current.Resources["primaryGreen"]
+            };
         }
 
         protected override void OnStart()
