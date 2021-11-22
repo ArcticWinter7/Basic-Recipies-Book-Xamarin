@@ -11,9 +11,8 @@
         <Label Text="Steps" />
         <Entry Text="{Binding Steps}" />
 
-        <StackLayout HorizontalOptions="Fill"
-                     VerticalOptions="Start"
-                     >
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
             <Button Text="Save"
                 Clicked="OnSaveClicked" 
                               

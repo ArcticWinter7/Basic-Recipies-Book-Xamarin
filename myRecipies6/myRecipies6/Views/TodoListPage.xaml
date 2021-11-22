@@ -14,22 +14,25 @@
     </ContentPage.ToolbarItems>
     <ListView x:Name="listView"
               Margin="20"
-              RowHeight="80"
+              RowHeight="100"
               ItemSelected="OnListItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <StackLayout Margin="0,0,0,0"
                                  Orientation="Vertical"
-                                 VerticalOptions="Start">
+                                 VerticalOptions="Start"
+                                 >
 
                         <Label Text="{Binding RecipeName}"
                                VerticalTextAlignment="Start"
                                HorizontalTextAlignment="Start"
+                               FontSize="Header"
                                />
                         <Label Text="{Binding RecipeMaker}"
                                VerticalTextAlignment="End"
                                HorizontalTextAlignment="Start"
+                               FontSize="Body"
                                />
                     </StackLayout>
                 </ViewCell>
