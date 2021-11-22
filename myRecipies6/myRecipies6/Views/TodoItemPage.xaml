@@ -4,17 +4,27 @@
              x:Class="myRecipies6.Views.TodoItemPage">
     <StackLayout Margin="20"
                  VerticalOptions="StartAndExpand">
-        <Label Text="Name" />
-        <Entry Text="{Binding RecipeName}" />
-        <Label Text="Notes" />
+        <Entry FontSize="Header" FontAttributes="Bold" Text="{Binding RecipeName}" />
         <Entry Text="{Binding RecipeMaker}" />
+        <Label Text="Ingredients" />
         <Entry Text="{Binding Ingredients}" />
+        <Label Text="Steps" />
         <Entry Text="{Binding Steps}" />
-        <Button Text="Save"
-                Clicked="OnSaveClicked" />
-        <Button Text="Delete"
-                Clicked="OnDeleteClicked" />
-        <Button Text="Cancel"
-                Clicked="OnCancelClicked" />
+
+        <StackLayout HorizontalOptions="Fill"
+                     VerticalOptions="Start"
+                     >
+            <Button Text="Save"
+                Clicked="OnSaveClicked" 
+                              
+                />
+            <Button Text="Delete"
+                Clicked="OnDeleteClicked" 
+
+                />
+            <!--<Button Text="Cancel"
+                Clicked="OnCancelClicked" />-->
+
+        </StackLayout>
     </StackLayout>
 </ContentPage>
