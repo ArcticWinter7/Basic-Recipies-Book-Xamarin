@@ -2,6 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="myRecipies6.Views.TodoListPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="My Recipies" HorizontalOptions="Center" FontSize="30"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+ADD" Clicked="OnItemAdded" Order="Primary">
             <ToolbarItem.IconImageSource>
